@@ -1,0 +1,13 @@
+pages:
+  stage: deploy
+  image: ruby:2.7
+  before_script:
+    - bundle install
+  script:
+    - cd documentos
+    - bundle exec jekyll build -d ../public
+  artifacts:
+    paths:
+      - public
+  only:
+    - principal
