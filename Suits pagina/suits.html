@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tudo sobre a série Suits: história, personagens, curiosidades e guia de episódios.">
+    <title>Suits - Tudo sobre a série</title>
+    <link rel="stylesheet" href="suits.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #270e0e;
+            line-height: 1.6;
+        }
+
+        header {
+    /* NOVO CÓDIGO MAIS RESILIENTE */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('suits-wallpaper.webp');
+    background-size: cover;
+   background-position: center 20%;
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    
+    /* Configurações de layout */
+    min-height: 250px; /* Garante uma altura mínima para o cabeçalho */
+ color: #f4f4f4;
+padding: 50px 20px;
+text-align: center;
+position: relative;
+ overflow: hidden;
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Trajan Pro', serif;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #dad5d5;
+}
+
+.header-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    width: 200%;
+    height: 50px;
+    background: rgba(255,255,255,0.05);
+    transform: skewY(-5deg);
+}
+
+
+
+
+        nav {
+            background-color: #181717;
+            color: rgb(231, 225, 225);
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: rgb(240, 18, 18);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e2e2de; 
+    text-decoration: none;
+        }
+
+        section {
+            padding: 30px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 20px 20px 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.footer-left h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right p {
+    margin: 0 0 5px 0;
+}
+
+.footer-right a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right p {
+        margin: 5px 0;
+    }
+}
+
+
+        .personagens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .personagem {
+            flex: 1 1 200px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .personagem img {
+            width: 100%;
+            height: auto;
+        }
+
+        .personagem div {
+            padding: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        iframe {
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .personagens {
+                flex-direction: column;
+            }
+        }
+
+        .personagens{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            border-radius: 8px;
+            flex-wrap: wrap;
+
+        }
+
+        .personagem{
+            
+            max-width: 100%;
+            width: 300px;
+            min-height: 430px;
+           text-align: center;
+           background: #fff;
+           border: 1px solid #ddd;
+           border-radius: 10px;
+           padding: 10px;
+           box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            
+        }
+
+        .personagem img{
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .personagem p{
+            min-height: 50px;
+            max-height: 90px;
+            overflow-y: auto;
+            margin: 0 0 10px 0;
+        }
+
+
+        /* 1. ESTILO DO CONTAINER GERAL (flexbox para alinhar) */
+.casos {
+    display: flex; /* Permite alinhar os cartões na linha */
+    flex-wrap: wrap; /* Permite quebrar a linha em telas menores */
+    gap: 20px; /* Espaço entre os cartões */
+    justify-content: center; /* Centraliza os cartões na tela */
+    padding: 10px 0;
+}
+
+/* 2. ESTILO DO CARTÃO INDIVIDUAL */
+.caso {
+    /* Define uma largura padrão para o cartão. Use a mesma do .personagem, se desejar. */
+    width: 300px;
+    /* Define uma altura mínima para o cartão, garantindo uniformidade */
+    min-height: 450px; 
+    
+    /* Demais estilos de visualização */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; /* Importante para a borda da imagem */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* 3. ESTILO DA IMAGEM (O MAIS IMPORTANTE) */
+.caso img {
+    width: 100%; /* Ocupa 100% da largura do cartão */
+    height: 200px; /* ALTURA FIXA para padronizar todas as imagens */
+    object-fit: cover; /* ESSENCIAL: Garante que a imagem preencha o espaço sem ser esticada, cortando o excesso */
+    border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores */
+}
+
+/* 4. Estilo adicional para o conteúdo dentro do caso */
+.caso h3 {
+    padding: 10px;
+    margin: 0;
+}
+
+.caso p {
+    padding: 0 15px 15px;
+    margin: 0;
+    min-height: 80px; /* Garante que o texto tenha espaço e não encolha o cartão */
+    overflow-y: auto; /* Adiciona barra de rolagem se o texto for muito longo */
+}
+
+
+<style>
+/* Estilo do acordeão */
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.accordion-header {
+    background-color: #fff9f9;
+    color: #131212;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.accordion-header:hover {
+    background-color: #997575;
+}
+
+.accordion-content {
+    max-height: 0; /* Esconde o conteúdo inicialmente */
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+.accordion-content.open {
+    padding: 15px 20px; /* Adiciona padding quando aberto */
+}
+
+.accordion-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.accordion-content p {
+    margin-bottom: 10px;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const headers = document.querySelectorAll(".accordion-header");
+    headers.forEach(header => {
+        header.addEventListener("click", function() {
+            const content = this.nextElementSibling;
+
+            // Fecha qualquer outro card aberto (opcional)
+            document.querySelectorAll(".accordion-content").forEach(c => {
+                if(c !== content) {
+                    c.style.maxHeight = null;
+                    c.classList.remove("open");
+                }
+            });
+
+            // Alterna abertura do card clicado
+            if(content.style.maxHeight){
+                content.style.maxHeight = null;
+                content.classList.remove("open");
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add("open");
+            }
+        });
+    });
+});
+</script>
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Suits - A Série</h1>
+    <p>Drama jurídico com inteligência, estilo e muito whisky.</p>
+</header>
+
+<nav>
+    <a href="#historia">HISTÓRIA</a>
+    <a href="#criacao">CRIAÇÃO</a>
+    <a href="#personagens">PERSONAGENS</a>
+    <a href="#curiosidades">CURIOSIDADES</a>
+    <a href="#episodios">GUIA DE EPISÓDIOS</a>
+    <a href="#trailer">TRAILER</a>
+    <a href="#frases">FRASES</a>
+     <a href="#onde-assistir">ASSISTIR</a>
+</nav>
+
+
+<section id="historia">
+    <h2>História</h2>
+    <p><strong>Suits</strong> é uma série de <strong>drama jurídico</strong> que acompanha a rotina do prestigioso escritório de advocacia <strong>Pearson Hardman</strong>, em <strong>Nova York</strong>, e começa quando <strong>Harvey Specter</strong>, um dos advogados mais <strong>respeitados</strong> da cidade, decide contratar <strong>Mike Ross</strong>, um jovem <strong>brilhante</strong> com <strong>memória fotográfica</strong>, mas que nunca frequentou a <strong>faculdade de Direito</strong>. Mesmo sem diploma, Mike impressiona Harvey com sua <strong>inteligência</strong> e <strong>habilidade natural</strong> para argumentação, e os dois formam uma <strong>dupla improvável</strong>, tentando esconder esse grande <strong>segredo</strong> de todos no escritório. Com o tempo, outros membros do time passam a ter papéis <strong>centrais</strong> na trama, como a <strong>assistente leal Donna Paulsen</strong>, a <strong>ambiciosa paralegal Rachel Zane</strong>, o <strong>emocional e competitivo Louis Litt</strong> e a firme <strong>sócia-gerente Jessica Pearson</strong>. A série se desenrola mostrando os <strong>desafios legais e morais</strong> enfrentados por esse grupo, enquanto o <strong>segredo de Mike</strong> ameaça ruir tudo o que construíram. Ao longo das <strong>nove temporadas</strong>, o escritório passa por <strong>fusões</strong>, <strong>disputas de poder</strong>, <strong>reviravoltas judiciais</strong> e <strong>transformações pessoais profundas</strong>. Personagens <strong>amadurecem</strong>, enfrentam suas <strong>falhas</strong>, criam <strong>laços fortes</strong> e se veem obrigados a lidar com as <strong>consequências de suas escolhas</strong>. Mais do que uma série sobre advogados ganhando casos, <strong>Suits</strong> é sobre <strong>amizade</strong>, <strong>lealdade</strong>, <strong>ambição</strong>, <strong>identidade</strong> e <strong>redenção</strong>, com <strong>diálogos afiados</strong>, <strong>personagens carismáticos</strong> e <strong>tramas</strong> que equilibram <strong>drama</strong>, <strong>humor</strong> e <strong>elegância</strong>.
+    </p>
+</section>
+
+
+
+<section id="criacao">
+    <h2>Criação</h2>
+    <p><strong>Suits</strong> nasce com <strong>Aaron Korsh</strong>, um roteirista americano que começou sua carreira no mercado financeiro de Wall Street antes de se aventurar na televisão. Formado em economia pela Universidade da Pensilvânia, Korsh trabalhou durante anos em bancos de investimento — uma experiência que influenciaria diretamente o tom e o conteúdo da série.
+
+        "Comecei a escrever sobre o que conhecia — o mundo corporativo, a pressão, os egos, os códigos não escritos. Mas ao invés de finanças, percebi que um escritório de advocacia dava mais liberdade dramática."
+        — Aaron Korsh, em entrevista à USA Network.
+</section>
+
+<section id="personagens">
+    <h2>Personagens Principais</h2>
+    <div class="personagens">
+        <div class="personagem">
+            <img src="HARVEY SPECTER.jpg">
+            <h3>Harvey Specter</h3>
+                <p>Um dos melhores closer de NY. Mestre em negociação e estratégia. Confiante, elegante, ferozmente leal... E nunca perde.</p>
+            <div>
+                
+
+            </div>
+        </div>
+        <div class="personagem">
+            <img src="MIKE ROSS.webp" alt="Mike Ross">
+            <div>
+                <h3>Mike Ross</h3>
+                <p>Um gênio autodidata com memória fotográfica, que pratica Direito sem diploma.</p>
+            </div>
+        </div>
+        <div class="personagem">
+            <img src="jessica.avif" alt="Jessica Pearson">
+            <div>
+                <h3>Jessica Pearson</h3>
+                <p>Sócia-gerente do escritório, elegante, implacável e estratégica. Líder nata que comanda com autoridade e inteligência.</p>
+            </div>
+        </div>
+        <div class="personagem">
+            <img src="Louis L..webp" alt="Louis Litt">
+            <div>
+                <h3>Louis Litt</h3>
+                <p>Advogado talentoso e emocional, com uma relação complexa com os colegas.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="personagens">
+    
+    <div class="personagens">
+        <div class="personagem">
+            <img src="rachel.webp">
+            <h3>Rachel Zane</h3>
+                <p>Paralegal ambiciosa que sonha em se tornar advogada. Interesse amoroso de Mike.</p>
+            <div>
+                
+
+            </div>
+        </div>
+        <div class="personagem">
+            <img src="donna.webp" alt="Donna Paulsen">
+            <div>
+                <h3>Donna Paulsen</h3>
+                <p>Assistente de confiança de Harvey, dona de uma intuição afiada e frases memoráveis. O coração do escritório.</p>
+            </div>
+        </div>
+        <div class="personagem">
+            <img src="samantha-wheeler-.jpg" alt="Samantha Wheeler">
+            <div>
+                <h3>Samantha Wheeler</h3>
+                <p>Advogada feroz, estratégica e leal. Conhecida por nunca recuar em uma briga. Tem um passado dramático.</p>
+            </div>
+        </div>
+        <div class="personagem">
+            <img src="robert-zane.jpg" alt="Robert Zane">
+            <div>
+                <h3>Robert Zane</h3>
+                <p>Advogado renomado e pai de Rachel. Respeitado em Nova York, combina autoridade e talento no tribunal.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section id="curiosidades">
+    <h2>Curiosidades</h2>
+    <ul>
+        <li>A série teve um total de <strong>9 temporadas</strong> e <strong>134 episódios</strong>.</li>
+        <li><strong>Meghan Markle</strong> (Rachel Zane) deixou a série após a 7ª temporada para se casar com o príncipe Harry.</li>
+        <li>A série se passa em Nova York, mas foi filmada em Toronto, Canadá.</li>
+        <li>O spin-off <strong>"Pearson"</strong> estreou em 2019, focando em Jessica Pearson, mas teve apenas 1 temporada.</li>
+        <li>A roupa dos personagens foi patrocinada por marcas reais como Tom Ford e Hugo Boss.</li>
+        <li> <strong>Gabriel Macht (Harvey Specter)</strong> e <strong>Sarah Rafferty (Donna Paulsen)</strong> são amigos de longa data, muito antes de "Suits".</li>
+        <li><strong>Patrick J. Adams</strong> (Mike Ross) dirigiu alguns episódios da série, além de atuar como protagonista.</li>
+        <li>O título "<strong>Suits</strong>" faz um trocadilho com "<strong>trajes</strong>" e "<strong>lawsuits</strong>" (processos jurídicos).</li>
+        <li>Muitos figurantes que aparecem como advogados e clientes eram, na verdade, <strong>estudantes de direito de Toronto</strong>.</li>
+         <li>A abertura da série é marcada pela música "<strong>Greenback Boogie</strong>", da banda <strong>Ima Robot</strong>, que virou marca registrada.  <a href="https://youtu.be/JgDfN9zFKo0?si=J9TdW8jTCgdjMcsk" target="_blank">Ouça aqui</a>.</li>
+         <li>Em 2023, a NBC anunciou o spin-off <strong>"Suits: L.A."</strong>, protagonizada por <strong>Stephen Amell (Arrow)</strong>, expandindo o universo da série. Estreou em 2025, e teve nota 5,8/10 pelo <strong>IMDb.</strong></li>
+         
+    </ul>
+</section>
+
+<section>
+
+<section id="frases">
+    <h2>Frases Marcantes</h2>
+    <ul>
+        <li><strong>Harvey Specter</strong>: <em>"Eu não tenho sorte. Eu faço minha própria sorte."</em></li>
+         <li><strong>Harvey Specter</strong>: <em>“Quando alguém aponta uma arma para sua cabeça, a questão não é se render ou ser morto. Você ainda tem mais 146 formas de sair dessa situação.”</em></li>
+        <li><strong>Harvey Specter</strong>: <em>"Você nunca me verá fracassar, porque eu nunca desistirei."</em></li>
+        <li><strong>Harvey Specter</strong>: <em>"Eu sou o melhor em tudo que faço, porque eu sou o único que faz o que eu faço."</em></li>
+        <li><strong>Louis Litt</strong>: <em>"Eu quero que você diga que é um mentiroso! E um hipócrita! E quero que você diga que está arrependido."</em></li>
+        <li><strong>Jessica Pearson</strong>: <em>"Às vezes os mocinhos precisam fazer coisas ruins para que os bandidos paguem."</em></li>
+        <li><strong>Mike Ross</strong>: <em>"Nunca julgue um homem até estar no lugar dele."</em></li>
+         <li><strong>Mike Ross</strong>: <em>"Às vezes gosto de estar com pessoas que não são muito inteligentes... Para ver como vive a outra metade."</em></li>
+    </ul>
+</section>
+
+<section>
+
+    <section id="episodios">
+    <h2>Guia de Episódios</h2>
+    <div class="accordion">
+
+        <!-- Temporada 1 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 1 (2011) - 12 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> Harvey Specter contrata Mike Ross, que nunca frequentou a faculdade de Direito. O escritório lida com casos complexos e dilemas éticos enquanto Mike tenta esconder seu segredo.</p>
+                <ul>
+                    <li>"Piloto" (BR)</li>
+                    <li>"Erros e omissões" (BR)</li>
+                    <li>"Vantagens" (BR)</li>
+                    <li>"Segredinhos sujos" (BR)</li>
+                    <li>"Fiança" (BR)</li>
+                    <li>"Ossos do ofício" (BR)</li>
+                    <li>"Conheça o adversário" (BR)</li>
+                    <li>"Crise de identidade" (BR)</li>
+                    <li>"Invicto" (BR)</li>
+                    <li>"Vida de fachada" (BR)</li>
+                    <li>"A regra do jogo" (BR)</li>
+                    <li>"Briga de cachorro grande" (BR)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Temporada 2 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 2 (2012–13) - 16 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> O passado de Mike ameaça vir à tona, enquanto Harvey enfrenta rivalidades internas e externas. O escritório lida com fusões e casos estratégicos de alto risco.</p>
+                <ul>
+                    <li>"Ela sabe" (BR)</li>
+                    <li>"Escolha um lado" (BR)</li>
+                    <li>"Conheça a nova chefe" (BR)</li>
+                    <li>"Descoberta" (BR)</li>
+                    <li>"Ponto de ruptura" (BR)</li>
+                    <li>"Aposto tudo" (BR)</li>
+                    <li>"Golpe baixo" (BR)</li>
+                    <li>"Rebobinar" (BR)</li>
+                    <li>"Asteriscos" (BR)</li>
+                    <li>"Matar ou morrer" (BR)</li>
+                    <li>"Ponto cego" (BR)</li>
+                    <li>"Lei da selva" (BR)</li>
+                    <li>"Zane contra Zane" (BR)</li>
+                    <li>"Ele voltou" (BR)</li>
+                    <li>"Normandia" (BR)</li>
+                    <li>"Guerra" (BR)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Temporada 3 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 3 (2013–14) - 16 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> Fusões e conflitos internos desafiam Harvey e o escritório, enquanto casos complexos testam lealdade e estratégia. Rivalidades externas ameaçam a estabilidade do time.</p>
+                <ul>
+                    <li>"O acordo" (BR)</li>
+                    <li>"É pegar ou largar" (BR)</li>
+                    <li>"Assuntos pendentes" (BR)</li>
+                    <li>"Conflito ddme interesses" (BR)</li>
+                    <li>"Sombra de dúvidas" (BR)</li>
+                    <li>"A outra vez" (BR)</li>
+                    <li>"A gata é minha" (BR)</li>
+                    <li>"Jogo final" (BR)</li>
+                    <li>"Má fé" (BR)</li>
+                    <li>"Fica" (BR)</li>
+                    <li>"Segredos enterrados" (BR)</li>
+                    <li>"Águas passadas"</li>
+                    <li>"Há controvérsias" (BR)</li>
+                    <li>"Coração delicado" (BR)</li>
+                    <li>"Saber quando desistir" (BR)</li>
+                    <li>"Sem saída" (BR)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Temporada 4 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 4 (2014–15) - 16 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> Mike entra no mundo financeiro, Harvey enfrenta novos desafios e o escritório lida com clientes poderosos, testando alianças e estratégias.</p>
+                <ul>
+                    <li>"Um, dois, três e já" (BR)</li>
+<li>"Café, almoço e janta" (BR)</li>
+<li>"Dois nos joelhos" (BR)</li>
+<li>"Alavanca" (BR)</li>
+<li>"O peso justo de uma libra" (BR)</li>
+<li>"Litteralmente queimado" (BR)</li>
+<li>"Terminamos" (BR)</li>
+<li>"Exposição" (BR)</li>
+<li>"Já era" (BR)</li>
+<li>"Gladiadores em Roma" (BR)</li>
+<li>"Já basta" (BR)</li>
+<li>"Respeito" (BR)</li>
+<li>"Encruzilhada" (BR)</li>
+<li>"Descarrilado" (BR)</li>
+<li>"Intenções" (BR)</li>
+<li>"Só um rostinho bonito" (BR)</li>
+
+                </ul>
+            </div>
+        </div>
+
+                <!-- Temporada 5 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 5 (2015–16) - 16 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> Mike é preso, causando tensão no escritório. Harvey e os outros lidam com os efeitos legais e pessoais dessa crise, enquanto novas ameaças surgem.</p>
+                <ul>
+                    <li>"Recusa" (BR)</li>
+<li>"Compensação" (BR)</li>
+<li>"Sem reposição" (BR)</li>
+<li>"Não posso fazer nada" (BR)</li>
+<li>"De igual para igual" (BR)</li>
+<li>"Privilégio" (BR)</li>
+<li>"Acertando no lugar certo" (BR)</li>
+<li>"Mea Culpa" (BR)</li>
+<li>"Sem convite" (BR)</li>
+<li>"Fé" (BR)</li>
+<li>"Tiro pela culatra" (BR)</li>
+<li>"Viver para lutar" (BR)</li>
+<li>"Nesse mundo de meu Deus" (BR)</li>
+<li>"Autodefesa" (BR)</li>
+<li>"Tique-taque" (BR)</li>
+<li>"Aos 45 do segundo tempo" (BR)</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Temporada 6 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 6 (2016–17) - 16 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> Após a prisão de Mike, o escritório precisa se reorganizar. Lealdades são testadas, Harvey e Mike enfrentam novos desafios pessoais e profissionais.</p>
+                <ul>
+                    <li>"Às encrencas" (BR)</li>
+<li>"Contas a pagar" (BR)</li>
+<li>"De volta ao mapa" (BR)</li>
+<li>"O trato" (BR)</li>
+<li>"Confiança" (BR)</li>
+<li>"Espanha" (BR)</li>
+<li>"Balançar as árvores" (BR)</li>
+<li>"Sem tempo" (BR)</li>
+<li>"No prato em que comeu" (BR)</li>
+<li>"P.S.L." (BR)</li>
+<li>"Ela se foi" (BR)</li>
+<li>"O quadro" (BR)</li>
+<li>"Dentes, nariz, dentes" (BR)</li>
+<li>"Admissão de culpa" (BR)</li>
+<li>"Quid pro quo" (BR)</li>
+<li>"Comitê" (BR)</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Temporada 7 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 7 (2017–18) - 16 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> Casamento de Mike e Rachel. O escritório enfrenta novos desafios, incluindo fusões e mudanças de liderança. Harvey precisa lidar com questões pessoais e profissionais.</p>
+                <ul>
+                    <li>"Às encrencas" (BR)</li>
+<li>"Contas a pagar" (BR)</li>
+<li>"De volta ao mapa" (BR)</li>
+<li>"O trato" (BR)</li>
+<li>"Confiança" (BR)</li>
+<li>"Espanha" (BR)</li>
+<li>"Balançar as árvores" (BR)</li>
+<li>"Sem tempo" (BR)</li>
+<li>"No prato em que comeu" (BR)</li>
+<li>"P.S.L." (BR)</li>
+<li>"Ela se foi" (BR)</li>
+<li>"O quadro" (BR)</li>
+<li>"Dentes, nariz, dentes" (BR)</li>
+<li>"Admissão de culpa" (BR)</li>
+<li>"Quid pro quo" (BR)</li>
+<li>"Comitê" (BR)</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Temporada 8 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 8 (2018–19) - 16 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> Com Harvey assumindo novos desafios e novos personagens entrando, o escritório precisa se adaptar a mudanças estratégicas e enfrentar clientes poderosos.</p>
+                <ul>
+                    <li>"O braço direito" (BR)</li>
+<li>"Hierarquia" (BR)</li>
+<li>"Promessas e mais promessas" (BR)</li>
+<li>"Receita por metro quadrado" (BR)</li>
+<li>"Boa lama" (BR)</li>
+<li>"Gatos, balé, Harvey Specter" (BR)</li>
+<li>"Vinho azedo" (BR)</li>
+<li>"Coral Gables" (BR)</li>
+<li>"Moção de adiamento" (BR)</li>
+<li>"Sócio-gerente" (BR)</li>
+<li>"Rocky 8" (BR)</li>
+<li>"Caça às baleias" (BR)</li>
+<li>"O bem maior" (BR)</li>
+<li>"Iguais" (BR)</li>
+<li>"Laranja" (BR)</li>
+<li>"Harvey" (BR)</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Temporada 9 -->
+        <div class="accordion-item">
+            <button class="accordion-header">Temporada 9 (2019) - 10 episódios</button>
+            <div class="accordion-content">
+                <p><strong>Resumo:</strong> Temporada final. Harvey e Donna consolidam seu relacionamento, Mike volta a aparecer e o escritório enfrenta os últimos grandes casos, fechando arcos de personagens.</p>
+                <ul>
+                    <li>"Tudo mudou" (BR)</li>
+<li>"Vigilância cerrada" (BR)</li>
+<li>"Moinhos de vento" (BR)</li>
+<li>"Cairo" (BR)</li>
+<li>"Se o sapato couber" (BR)</li>
+<li>"Custe o que custar" (BR)</li>
+<li>"Estrada cênica" (BR)</li>
+<li>"Dilema de prisioneiro" (BR)</li>
+<li>"Arrasando" (BR)</li>
+<li>"Última trapaça" (BR)</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        
+    </div>
+</section>
+
+
+</section>
+
+<section id="principais-casos">
+    <h2>Principais Casos / Episódios Marcantes</h2>
+    <div class="casos">
+        <div class="caso">
+            <img src="c and fitness.jpg" alt="Character and Fitness">
+            <h3>Character and Fitness (S06E16)</h3>
+            <p>Mike enfrenta um julgamento para validar sua carreira como advogado após a descoberta de sua falta de diploma. A tensão é enorme e impacta todo o escritório.</p>
+        </div>
+        <div class="caso">
+            <img src="no way.jpg" alt="No Way Out">
+            <h3>No Way Out (S03E16)</h3>
+            <p>Mike é pressionado a trair Harvey, colocando sua lealdade à prova e considerando deixar a advocacia devido aos riscos envolvidos.</p>
+        </div>
+        <div class="caso">
+            <img src="suits_series_finale_harvey_donna.jpg" alt="One Last Con">
+            <h3>One Last Con (S09E10)</h3>
+            <p>Mike retorna para ajudar Harvey e Louis a salvar o escritório. O episódio final amarra várias histórias e encerra o arco de personagens principais.</p>
+        </div>
+        <div class="caso">
+            <img src="self defense.webp" alt="Self-Defense">
+            <h3>Self-Defense (S05E14)</h3>
+            <p>Mike enfrenta as consequências de sua entrada ilícita na advocacia. Destaca um julgamento simulado que testa suas habilidades para se defender.</p>
+        </div>
+        <div class="caso">
+            <img src="fé.jpg" alt="Faith">
+            <h3>Faith (S05E10)</h3>
+            <p>Mike planeja se casar com Rachel, mas é preso por fraude, marcando um dos pontos altos da série e impactando todo o escritório.</p>
+        </div>
+    </div>
+</section>
+
+
+</section>
+
+<section id="onde-assistir">
+    <h2>Onde Assistir</h2>
+    <p>Confira os canais oficiais onde você pode assistir à série <strong>Suits</strong>, separados por Brasil e exterior:</p>
+
+    <div class="streaming-section">
+        <h3>Brasil</h3>
+        <ul>
+            <li><strong>Netflix Brasil:</strong> <a href="https://www.netflix.com/br/title/70195800" target="_blank">Assista aqui</a></li>
+            <li><strong>Amazon Prime Video Brasil:</strong> <a href="https://www.primevideo.com/detail/Suits/0PM8BWCVJKFC9XFWZ85C22JKZA" target="_blank">Assista aqui</a></li>
+        </ul>
+    </div>
+
+    <div class="streaming-section">
+        <h3>🌎 Exterior</h3>
+        <ul>
+            <li><strong>Peacock (EUA):</strong> <a href="https://www.peacocktv.com/watch-online/tv/suits/8003089882869075112" target="_blank">Assista aqui</a></li>
+            <li><strong>Netflix EUA:</strong> <a href="https://www.netflix.com/title/70195800" target="_blank">Assista aqui</a></li>
+            <li><strong>Apple TV:</strong> <a href="https://tv.apple.com/us/show/suits/umc.cmc.3ywscpqclsfy0w2ezs44auwsx" target="_blank">Assista aqui</a></li>
+        </ul>
+    </div>
+</section>
+
+<section>
+
+<!-- Quiz "Quem você seria em Suits" -->
+<div id="quiz-container" style="max-width:500px;margin:20px auto;padding:20px;background:#f5f5f5;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.2);text-align:center;font-family:Arial, sans-serif;">
+  <h2>Quem você seria em Suits?</h2>
+  <div id="question"></div>
+  <div id="options" style="margin-top:15px;"></div>
+  <button id="next-btn" style="margin-top:20px;padding:10px 20px;border:none;border-radius:8px;background-color:#0B3D91;color:#fff;cursor:pointer;">Próxima</button>
+  <div id="result" style="margin-top:20px;font-weight:bold;"></div>
+</div>
+
+<script>
+const quizData = [
+  {
+    question: "Como você lida com problemas no trabalho?",
+    options: [
+      { text: "Com confiança e liderança", value: "Harvey" },
+      { text: "Busco soluções inteligentes e inesperadas", value: "Mike" },
+      { text: "Analiso cada detalhe e sigo regras", value: "Louis" },
+      { text: "Dou suporte e mantenho todos organizados", value: "Donna" }
+    ]
+  },
+  {
+    question: "Qual é sua prioridade na vida?",
+    options: [
+      { text: "Sucesso e poder", value: "Harvey" },
+      { text: "Aprender e crescer", value: "Mike" },
+      { text: "Reconhecimento e respeito", value: "Louis" },
+      { text: "Lealdade e conexões pessoais", value: "Donna" }
+    ]
+  },
+  {
+    question: "Como você lida com colegas difíceis?",
+    options: [
+      { text: "Encaro de frente e sem medo", value: "Harvey" },
+      { text: "Uso inteligência para surpreender", value: "Mike" },
+      { text: "Fico tenso mas tento provar meu valor", value: "Louis" },
+      { text: "Tento entender e mediar a situação", value: "Donna" }
+    ]
+  }
+];
+
+let currentQuestion = 0;
+let scores = { Harvey:0, Mike:0, Louis:0, Donna:0 };
+
+function showQuestion() {
+  const q = quizData[currentQuestion];
+  document.getElementById('question').textContent = q.question;
+  const optionsDiv = document.getElementById('options');
+  optionsDiv.innerHTML = '';
+  q.options.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.textContent = opt.text;
+    btn.style.display = "block";
+    btn.style.width = "80%";
+    btn.style.margin = "10px auto";
+    btn.style.padding = "10px";
+    btn.style.borderRadius = "8px";
+    btn.style.border = "1px solid #0B3D91";
+    btn.style.background = "#fff";
+    btn.style.cursor = "pointer";
+    btn.onclick = () => {
+      scores[opt.value]++;
+      Array.from(optionsDiv.children).forEach(b => b.disabled = true);
+    };
+    optionsDiv.appendChild(btn);
+  });
+}
+
+document.getElementById('next-btn').onclick = () => {
+  currentQuestion++;
+  if(currentQuestion < quizData.length){
+    showQuestion();
+  } else {
+    const maxScore = Math.max(...Object.values(scores));
+    const resultCharacter = Object.keys(scores).filter(k => scores[k] === maxScore)[0];
+    document.getElementById('quiz-container').innerHTML = `<h2>Você seria: ${resultCharacter}!</h2>`;
+  }
+};
+
+showQuestion();
+</script>
+
+    
+</script>
+
+
+</section>
+
+
+</section>
+
+<section id="trailer">
+    <h2>Trailer da Série</h2>
+    <p>Confira o trailer oficial da série Suits:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/85z53bAebsI" title="Trailer Suits" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<footer>
+    
+<div class="footer-container">
+        <div class="footer-left">
+            <h3>Suits – Página de Fãs</h3>
+            <p>Conteúdo não oficial criado por fãs para fãs da série Suits.</p>
+        </div>
+        <div class="footer-right">
+            <p>Desenvolvido por: Erick Vergara</p>
+            <p>Instagram: <a href="https://www.instagram.com/es_vergara" target="_blank">@es_vergara</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 – Todos os direitos da série pertencem à Universal Television e USA Network.</p>
+    </div>
+
+
+</footer>
+
+</body>
+</html>
